@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "Montserrat-Light" ;
+}
+@font-face {
+	font-family: 'Siracha-Regular';
+	src: url('../assets/font/Sriracha-Regular.ttf');
+}
+@font-face {
+	font-family: 'Montserrat-Light';
+	src: url('../assets/font/Montserrat-Light.ttf');
+}
+h1, h2, h3, h4{
+	font-family: "Siracha-Regular", sans-serif;
+	color:#591e91;
+	text-align: center;
+	padding: 20px;
+}
+h3{
+	font-size: 2rem;
+}
+#top{
+	text-align: center;
+}
+.logo{
+	width: 100px;
+	border-radius: 50%;
+}
+nav{
+	text-align: center;
+}
+.menu{
+	background-color: blueviolet;
+	list-style-type: none;
+	padding: 0; /*para eliminar el espacio entre la lista y el borde*/
+	width: 90%;
+	height: 60px;
+	margin: 5px auto; /*centra el menu*/
+
+
+	
+	display: flex;
+	justify-content: space-evenly;/*puedo probar otras disposiciones*/
+	align-items: center;/*centra horizontal*/
+}
+.menu .submenu{
+	position:absolute;
+	display: none;
+}
+.menu .submenu .sub_i{
+	font-size: 0.8rem;
+	display: flex;
+	flex-direction: column;
+}
+.menu .item a{
+	color: #1b0a2b;
+	text-decoration: none;
+	font-weight: bolder;
+	padding: 20px;
+}
+.menu .item:hover .submenu{
+	display: flex;
+	flex-direction: column;/*puede ser row*/
+}
+.menu .item:hover a{
+	background-color: #5b248e;
+	color:white;
+}
+/*termina el css del menu*/
+.section1{
+	background-image: url("../assets/img/manos3.jpg");
+  	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px;
+	margin:50px;
+}
+.section1 p{
+	background-color: #ddc4f550;
+	color:#1b0a2b;
+	line-height: 2;
+	padding: 20px;
+}
+.section2{
+	background-image: url("../assets/img/manos.jpg");
+  	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px;
+	margin:50px;
+}
+.section2 p{
+	background-color: #ddc4f550;
+	color:#1b0a2b;
+	line-height: 2;
+	padding: 20px;
+}
+.section3{
+	background-image: url("../assets/img/manos2.jpg");
+  	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px;
+	margin:50px;
+	
+}
+
+.unas{
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+h5{
+	color:blueviolet;
+	text-align: center;
+	padding: 20px;
+}
+footer{
+	background-color: #ddc4f5;
+	height: 100px;
+}
